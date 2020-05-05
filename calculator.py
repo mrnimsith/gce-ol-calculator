@@ -1,316 +1,224 @@
+#coded by nimsith
 import pyfiglet
+import os
 
-ascii_banner = pyfiglet.figlet_format("tool by")
-a=ascii_banner.center(20)
-ascii_banner2 = pyfiglet.figlet_format("MRAK")
-b=ascii_banner2.center(20)
-print(a)
-print(b)
-print(" ")
-c="GCE RESULTS CALCULATOR"
-d=c.center(30)
-f="please enter your GCE O/L marks"
-g=f.center(30)
-print(d)
-print(" ")
-print("options:")
-print("   1) GCE O/L")
-print("   2) GCE A/L")
-print(" ")
-e=int(input("choose an option (1/2) :"))
-print(" ")
-print(" ")
-if e==1:
-    print(g)
-    print(" ")
-    s1=int(input("maths :"))
-    s2=int(input("science :"))
-    s3=int(input("sinhala :"))
-    s4=int(input("commerce :"))
-    s5=int(input("history :"))
-    s6=int(input("english :"))
-    s7=int(input("ICT :"))
-    s8=int(input("religion :"))
-    s9=int(input("arts :"))
+os.system("clear")
+print('''
+░░░░░▄▄▄▀▀▀▀▀▀▀▀▀▄▄▄░░░░░░░░░
+░░░▄▀░░░░░░░░░░░░░░░▀▀▄▄░░░░░
+░░▄▀░░░░░░░░░░░░░░░░░░░░▀▄░░░
+░▄▀░░░░░░░░░░░░░░░░░░░░░░░█░░
+░█░░░░░░░░░░░░░░░░░░░░░░░░░█░
+▐░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+█░░░░▀▀█▄▄▄░░░▄▌░░░░░░░░░░░░▐
+▌░░░░░▌░██▀█▀▀░░░▄▄▄▄▄░░░░▌░▐
+▌░░░░░▀▄▄▄▀░░░░░░▌░▀███▄▄▀░░▐
+▌░░░░░░░░░░░░░░░░░▀▄▄▄▄▀░░░▄▌
+▐░░░░▐▀░░░░░░░░░░░░░░░░░░░▄▀░
+░█░░░▌░░▄▀▀▀▄▄▄░░░░░░░░░░▄▀░░
+░░█░░▀░░░░▄▄▄▄░▀▀▌░░▌░░░█░░░░
+░░░▀▄░░░░░░░░░▀░░░▄▀░░▄▀░░░░░
+░░░░░▀▄▄▄░░░░░░░░░▄▄▀▀░░░░░░░
+░░░░░░░░▐▀▀▀▀▀▀▀▀▀░░░░░░░░░░░
+░░░░░░░░█░░░░░░░░░░░░░░░░░░░░
+█▀▀█ █▀▀█ █▀▀ 　 █░░█ █▀▀█ █░░█
+█▄▄█ █▄▄▀ █▀▀ 　 █▄▄█ █░░█ █░░█
+▀░░▀ ▀░▀▀ ▀▀▀ 　 ▄▄▄█ ▀▀▀▀ ░▀▀▀
+▒█░▄▀ ▀█▀ ▒█▀▀▄ ▒█▀▀▄ ▀█▀ ▒█▄░▒█ ▒█▀▀█
+▒█▀▄░ ▒█░ ▒█░▒█ ▒█░▒█ ▒█░ ▒█▒█▒█ ▒█░▄▄
+▒█░▒█ ▄█▄ ▒█▄▄▀ ▒█▄▄▀ ▄█▄ ▒█░░▀█ ▒█▄▄█
+▒█▀▄▀█ ▒█▀▀▀ ▀█
+▒█▒█▒█ ▒█▀▀▀ █▀
+▒█░░▒█ ▒█▄▄▄ ▄░
+''')
+print("\033[1;31;40m        ~ a tool by nimsith  \n")
+print()
+a=(input("do you wanna continue ? [y/n] :"))
+os.system("clear")
+print()
+if a=="y":
+    print("\033[1;30;40m Enter your O/L marks :  \n")
+    s1=int(input("maths       :"))
+    print()
+    s2=int(input("science     :"))
+    print()
+    s3=int(input("ICT         :"))
+    print()
+    s4=int(input("sinhala     :"))
+    print()
+    s5=int(input("religion    :"))
+    print()
+    s6=int(input("english     :"))
+    print()
+    s7=int(input("commerce    :"))
+    print()
+    s8=int(input("history     :"))
+    print()
+    s9=int(input("ART         :"))
+    #this is maths marks
+    if s1>0:
+        r1="F"
     if s1>39:
-        r1="pass"
-    else:
-        r1="fail"
+        r1="S"
+    if s1>54:
+        r1="C"
+    if s1>64:
+        r1="B"
+    if s1>74:
+        r1="A"
+    #this is science marks
+    if s2>0:
+        r2="F"
     if s2>39:
-        r2="pass"
-    else:
-        r2="fail"
+        r2="S"
+    if s2>54:
+        r2="C"
+    if s2>64:
+        r2="B"
+    if s2>74:
+        r2="A"
+    #this is ICT marks
+    if s3>0:
+        r3="F"
     if s3>39:
-        r3="pass"
-    else:
-        r3="fail"
+        r3="S"
+    if s3>54:
+        r3="C"
+    if s3>64:
+        r3="B"
+    if s3>74:
+        r3="A"
+    #this is sinhala marks
+    if s4>0:
+        r4="F"
     if s4>39:
-        r4="pass"
-    else:
-        r4="fail"
+        r4="S"
+    if s4>54:
+        r4="C"
+    if s4>64:
+        r4="B"
+    if s4>74:
+        r4="A"
+    #this is religion marks
+    if s5>0:
+        r5="F"
     if s5>39:
-        r5="pass"
-    else:
-        r5="fail"
+        r5="S"
+    if s5>54:
+        r5="C"
+    if s5>64:
+        r5="B"
+    if s5>74:
+        r5="A"
+    #this is english marks
+    if s6>0:
+        r6="F"
     if s6>39:
-        r6="pass"
-    else:
-        r6="fail"
+        r6="S"
+    if s6>54:
+        r6="C"
+    if s6>64:
+        r6="B"
+    if s6>74:
+        r6="A"
+    #this is commerce marks
+    if s7>0:
+        r7="F"
     if s7>39:
-        r7="pass"
-    else:
-        r7="fail"
+        r7="S"
+    if s7>54:
+        r7="C"
+    if s7>64:
+        r7="B"
+    if s7>74:
+        r7="A"
+    #this is history marks
+    if s8>0:
+        r8="F"
     if s8>39:
-        r8="pass"
-    else:
-        r8="fail"
+        r8="S"
+    if s8>54:
+        r8="C"
+    if s8>64:
+        r8="B"
+    if s8>74:
+        r8="A"
+    #this is art marks
+    if s9>0:
+        r9="F"
     if s9>39:
-        r9="pass"
-    else:
-        r9="fail"
+        r9="S"
+    if s9>54:
+        r9="C"
+    if s9>64:
+        r9="B"
+    if s9>74:
+        r9="A"
     if s1>39:
-        l=1
+        m1=1
     else:
-        l=0
-    if s3>39:
-        m=1
+        m1=0
+    if s4>39:
+        m2=1
     else:
-        m=0
-    if m+l>1:
-        j="congratulations you have passed your exam"
+        m2=0
+    if m1+m2>1:
+        x=1
     else:
-        j="sorry you have failed your exam"
-    print(" ")
-    print(" ")
-    total=s1+s2+s3+s4+s5+s6+s7+s8+s9
-    avg=total/9
-    h="here is your results"
-    i=h.center(30)
-    print(i)
-    print(" ")
-    print("maths         ",r1)
-    print("science       ",r2)
-    print("sinhala       ",r3)
-    print("commerce      ",r4)
-    print("history       ",r5)
-    print("english       ",r6)
-    print("ICT           ",r7)
-    print("religion      ",r8)
-    print("arts          ",r9)
-    print(" ")
-    print("here is your total :",total)
-    print("here is your avarage :",avg)
-    print(" ")
-    print(j)
-elif e==2:
-    j="please select your GCE A/L stream"
-    k=j.center(30)
-    print(k)
-    print(" ")
-    print("   1) maths")
-    print("   2) bio")
-    print("   3) commerce")
-    print("   4) arts")
-    print(" ")
-    n=int(input("choose your stream (1/2/3/4) :"))
-    if n==1:
-        print(" ")
-        print("please enter your GCE A/L marks")
-        print(" ")
-        s1=int(input("maths :"))
-        s2=int(input("ICT :"))
-        s3=int(input("pysics :"))
-        if s1>39:
-            r1="pass"
-        else:
-            r1="fail"
-        if s2>39:
-            r2="pass"
-        else:
-            r2="fail"
-        if s3>39:
-            r3="pass"
-        else:
-            r3="fail"
-        if s1>39:
-            o=1
-        else:
-            o=0
-        if s2>39:
-            p=1
-        else:
-            p=0
-        if s3>39:
-            q=1
-        else:
-            q=0
-        if o+p+q>2:
-            r="congratulation you have passed the A/L exam"
-        else:
-            r="sorry you have failed your A/L exam"
-        print(" ")
-        print(" ")
-        s="here is your results"
-        t=s.center(30)
-        print(t)
-        print(" ")
-        print("maths         ",r1)
-        print("ICT           ",r2)
-        print("pysics.       ",r3)
-        print(" ")
-        print("here is your total",s1+s2+s3)
-        print("here is your avarage",(s1+s2+s3)/3)
-        print(" ")
-        print(r)
-    if n==2:
-        print(" ")
-        print("please enter your GCE A/L marks")
-        print(" ")
-        s1=int(input("bio :"))
-        s2=int(input("chemistry :"))
-        s3=int(input("pysics :"))
-        if s1>39:
-            r1="pass"
-        else:
-            r1="fail"
-        if s2>39:
-            r2="pass"
-        else:
-            r2="fail"
-        if s3>39:
-            r3="pass"
-        else:
-            r3="fail"
-        if s1>39:
-            o=1
-        else:
-            o=0
-        if s2>39:
-            p=1
-        else:
-            p=0
-        if s3>39:
-            q=1
-        else:
-            q=0
-        if o+p+q>2:
-            r="congratulation you have passed the A/L exam"
-        else:
-            r="sorry you have failed your A/L exam"
-        print(" ")
-        print(" ")
-        s="here is your results"
-        t=s.center(30)
-        print(t)
-        print(" ")
-        print("bio           ",r1)
-        print("chemistry     ",r2)
-        print("pysics        ",r3)
-        print(" ")
-        print("here is your total",s1+s2+s3)
-        print("here is your avarage",(s1+s2+s3)/3)
-        print(" ")
-        print(r)
-    if n==3:
-        print(" ")
-        print("please enter your GCE A/L marks")
-        print(" ")
-        s1=int(input("accounting :"))
-        s2=int(input("ICT :"))
-        s3=int(input("business studies :"))
-        if s1>39:
-            r1="pass"
-        else:
-            r1="fail"
-        if s2>39:
-            r2="pass"
-        else:
-            r2="fail"
-        if s3>39:
-            r3="pass"
-        else:
-            r3="fail"
-        if s1>39:
-            o=1
-        else:
-            o=0
-        if s2>39:
-            p=1
-        else:
-            p=0
-        if s3>39:
-            q=1
-        else:
-            q=0
-        if o+p+q>2:
-            r="congratulation you have passed the A/L exam"
-        else:
-            r="sorry you have failed your A/L exam"
-        print(" ")
-        print(" ")
-        s="here is your results"
-        t=s.center(30)
-        print(t)
-        print(" ")
-        print("accounting         ",r1)
-        print("ICT                ",r2)
-        print("business studies   ",r3)
-        print(" ")
-        print("here is your total",s1+s2+s3)
-        print("here is your avarage",(s1+s2+s3)/3)
-        print(" ")
-        print(r)
-    if n==4:
-        print(" ")
-        print("please enter your GCE A/L marks")
-        print(" ")
-        s1=int(input("logic :"))
-        s2=int(input("ICT :"))
-        s3=int(input("religion :"))
-        if s1>39:
-            r1="pass"
-        else:
-            r1="fail"
-        if s2>39:
-            r2="pass"
-        else:
-            r2="fail"
-        if s3>39:
-            r3="pass"
-        else:
-            r3="fail"
-        if s1>39:
-            o=1
-        else:
-            o=0
-        if s2>39:
-            p=1
-        else:
-            p=0
-        if s3>39:
-            q=1
-        else:
-            q=0
-        if o+p+q>2:
-            r="congratulation you have passed the A/L exam"
-        else:
-            r="sorry you have failed your A/L exam"
-        print(" ")
-        print(" ")
-        s="here is your results"
-        t=s.center(30)
-        print(t)
-        print(" ")
-        print("logic         ",r1)
-        print("ICT          ",r2)
-        print("religion     ",r3)
-        print(" ")
-        print("here is your total",s1+s2+s3)
-        print("here is your avarage",(s1+s2+s3)/3)
-        print(" ")
-        print(r)
-    if n>4:
-        print("sorry we dont have tec subjects")
+        x=0
+    os.system("clear")
+    print()
+    print("\033[1;31;40m Here is your resluts :  \n")
+    print("\033[1;30;40m \n")
+    print("maths       :",r1)
+    print()
+    print("science     :",r2)
+    print()
+    print("ICT         :",r3)
+    print()
+    print("sinhala     :",r4)
+    print()
+    print("religion    :",r5)
+    print()
+    print("english     :",r6)
+    print()
+    print("commerce    :",r7)
+    print()
+    print("history     :",r8)
+    print()
+    print("ART         :",r9)
+    print()
+    y=input("press any to see whether you pass or fail :")
+    os.system("clear")
+    print()
+    if x>0:
+        print("\033[1;32;40m \n")
+        ascii_banner = pyfiglet.figlet_format("pass")
+        print(ascii_banner)
+        print("your total   :",(s1+s2+s3+s4+s5+s6+s7+s8+s9))
+        print()
+        print("your avarage :",(s1+s2+s3+s4+s5+s6+s7+s8+s9)/3)
+        print()
+        print("congratulations ! you have passed the O/L exam ")
+        print()
+    else:
+        print("\033[1;31;40m \n")
+        ascii_banner2 = pyfiglet.figlet_format("fail")
+        print(ascii_banner2)
+        print("you have failed the current subjects :")
+        print()
+        if m1<1:
+            print("maths")
+        print()
+        if m2<1:
+            print("sinhala")
+            print()
+        print("sorry ! you have failed your O/L exam ")
+        print()
 else:
-    print("sorry wrong option !")
+    print("\033[1;30;40m okay will be in second shy !  \n")
+    print()
+    #tool by nimsith
+    #pyfiglet have to be installed to run this
+
 
